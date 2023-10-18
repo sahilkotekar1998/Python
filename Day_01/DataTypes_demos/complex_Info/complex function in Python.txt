@@ -1,0 +1,17 @@
+
+complex() function
+	is used to convert number or string to complex number.
+
+complex() takes two argument
+	real
+	imaginary
+
+both these arguments are optional, by default value is 0.
+
+these arguments can be int or float or string
+
+But string should have a valid number.
+
+
+
+

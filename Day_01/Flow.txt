@@ -1,0 +1,32 @@
+Introduction to python  -----------------------------------
+
+How to Install Python on Windows ----------------------------------
+
+Hello world application-----------------
+	[ on VS Code or Pycharm ]
+
+how to open powershell window     --------------
+	go to a particular folder----------------
+		press shift and right click together----------------
+			select "open powershell window"-----------------
+
+
+indentation in python-----------------
+
+How does Python work?------------------
+comments in Python----------------------
+
+Data types except sequence----------------
+	typecasting in python----------------
+
+How to accept input in python------------
+Operators
+if demos
+switch demos
+loop demos
+
+Assignments
+
+
+
+

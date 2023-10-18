@@ -1,0 +1,1 @@
+If you are using VS Code then you must open terminal to accept input.
