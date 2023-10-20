@@ -7,6 +7,7 @@ for i in range(1,11):
     print(f"{num}*{i}={result}")
 
 
+
     
 #2)	using switch ….case display whether accepted character is vowel or not.
 
@@ -83,5 +84,14 @@ while(True):
     print(f"the total of all numbers entered is: {total}")
 
 
-    
+#8) accept a charac ter and display whether it is upper case or lower case or not an alphabet. 
+char = input("Enter a character: ")
+
+if len(char) == 1 and char.isalpha():
+    if char.islower():
+        print(f"{char} is a lowercase letter.")
+    elif char.isupper():
+        print(f"{char} is an uppercase letter.")
+else:
+    print(f"{char} is not an alphabet character.")
 
