@@ -1,0 +1,28 @@
+from multipledispatch import dispatch
+  
+#passing two parameters
+@dispatch(int,int)
+def product(first,second):
+    result = first*second
+    print(result)
+  
+#passing three parameters
+@dispatch(int,int,int)
+def product(first,second,third):
+    result  = first * second * third
+    print(result)
+
+product(10,20)
+print(type(dispatch),"\t",id(dispatch))
+print(type(product),"\t",id(product))
+print(product.__doc__)
+
+""" output:
+200
+<class 'function'>       2193954642176
+<class 'multipledispatch.dispatcher.Dispatcher'>         2193955403344
+Multiply dispatched method: product
+
+Other signatures:
+    int, int
+    int, int, int """
