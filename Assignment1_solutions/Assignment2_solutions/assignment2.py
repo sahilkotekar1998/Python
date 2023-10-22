@@ -145,3 +145,6 @@ def sum_values(*args):
 # Example usage:
 result = sum_values(5, 10, 15, 20)
 print(f"The sum is: {result}")
+
+
+print("--------------")

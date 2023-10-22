@@ -96,4 +96,4 @@ else:
     print(f"{char} is not an alphabet character.")
 
 
-print("hello")
+print("--------------------")
