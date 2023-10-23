@@ -1,0 +1,76 @@
+
+"""
+1) write a function to accept a number and return its square using
+	a) normal function
+	b) lambda
+"""
+def square(num):
+    return num*num
+user_input=float(input("enter number"))
+result= square(user_input)
+print(f"The square of {user_input} is {result}")
+
+
+
+square = lambda num: num * num
+user_input = float(input("Enter a number: "))
+result = square(user_input)
+print(f"The square of {user_input} is {result}")
+
+
+
+
+
+
+"""
+2) write a function to display "Hello World" using
+	a) normal function
+	b) lambda
+"""
+def disp(val):
+    print(val)
+disp("hello world")
+
+hello = lambda val:print(val)
+hello("hello world")
+
+
+
+
+
+
+"""
+3) write a function with 2 arguments , second argument should be "default argument" and display them. Using
+	a) normal function 
+	b) lambda
+"""
+
+
+def display_args(arg1, arg2="default_argument"):
+    print("Argument 1:", arg1)
+    print("Argument 2:", arg2)
+
+display_args("Value 1")
+
+disp=lambda arg1,arg2="default value":[arg1,arg2]
+print(disp("hi"))
+
+
+
+
+
+"""
+
+4) write a function with variable no. of arguments and display them. Using
+	a) normal function
+	b) lambda
+
+"""
+
+def myfun(fun,*var):
+    fun(*var)
+disp1=lambda *x:[print(i) for i in x]
+
+myfun(disp1,"sahil","kotekar")
+    
+
