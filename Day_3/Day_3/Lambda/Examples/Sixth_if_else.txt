@@ -1,0 +1,10 @@
+min = lambda a, b, c : f"{a} is smaller" if(a < b & b < c) \
+     else f"{b} is smaller"  if (b < c) else f"{c} is smaller" 
+
+print(min(40, 30, 10))
+
+
+fun=lambda x: [print("positive") if x>0 else(print("negative") if x<0 else(print("zero")))]
+fun(5)
+fun(-6)
+fun(0)
