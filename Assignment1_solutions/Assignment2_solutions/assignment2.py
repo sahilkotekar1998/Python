@@ -43,7 +43,8 @@ input_number = float(input("Enter a number: "))
 result = square_number(input_number)
 print(f"The square of {input_number} is {result}")
 
-
+multiply=lambda x,y:x*y    #lambda
+print(multiply(5,5))      
 
 
 """
