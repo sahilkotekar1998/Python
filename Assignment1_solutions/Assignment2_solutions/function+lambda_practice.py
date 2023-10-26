@@ -1,9 +1,13 @@
+
 def add(num):
     return num+num
 
 result=add(3)
 
-
+add =lambda x:x+x
+user=int(input("enter number"))
+result=add(user)
+print(f"{result}")
 
 
 

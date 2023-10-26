@@ -23,6 +23,8 @@ print(f"The square of {user_input} is {result}")
 
 
 
+
+
 """
 2) write a function to display "Hello World" using
 	a) normal function
@@ -79,6 +81,9 @@ myfun(disp1,"sahil","kotekar")
     
 #Passing function in function and returning function with value
 #and cube function passed while calling
+
+
+
 def myfun(fun,value):
     return fun(value)
 cube=lambda x:x*x*x

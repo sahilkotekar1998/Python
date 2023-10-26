@@ -1,102 +1,104 @@
-#1)	accept a number and display its table.   
+#1) accept a number and display its table.
 
-num = int(input("Enter a number: "))
-
+a=int(input("enter a number : "))
+print("table for  ",a)
+sum=0
 for i in range(1,11):
-    result= num*i
-    print(f"{num}*{i}={result}")
-
-
-
+    print(a,"x",i,"=",a*i)
     
-#2)	using switch ….case display whether accepted character is vowel or not.
+#2) using switch ….case   display whether accepted character is vowel or not.
 
-vowel = (input("enter character to check it is vowel or not"))
-
-ch = vowel
-
-match ch:
-    case "A":
-        print("VOWEL")
-    case "E":
-        print("VOWEL")
-    case "I":
-        print("VOWEL")
-    case "O":
-        print("VOWEL")
-    case "U":
-        print("VOWEL")
+a=input("enter char")
+match a:
+    case'A':
+        print("Vowel")
+    case'a':
+        print("Vowel")
+    case 'E':
+        print("Vowel")
+    case 'e':
+        print("Vowel")
+    case 'I':
+        print("Vowel")
+    case 'i':
+        print("Vowel")
+    case 'O':
+        print("Vowel")
+    case'o':
+        print("Vowel")
     case _:
-        print("NOT VOWEL")
+        print("Not Vowel")
 
 
-#3)	Display numbers  1 to 10 using  While loop
+#3) Display numbers  1 to 10 using  While loop
 
 i=1
 while(i<11):
     print(i)
     i+=1
 
-#4)	Display numbers from 3 to 30 except number 24  using while loop.
 
-number = 3
+#4)Display numbers from 3 to 30 except number 24  using while loop.
 
-while(number<=30):
-    if (number!=24):
-        print(number, end=' ')
-    number+=1
+i=3
+while i<31:
+    if i==24:
+        i+=1
+        continue
+    print(i)
+    i+=1
 
 
+#5)accept marks from the user. Using if…….elif….  Else,  display whether result is  fail, pass, second class , first class, Distinction etc.  
 
-
-#5) accept marks from the user. Using if…….elif…. Else,  
-# display whether result is  fail, pass, second class , first class, Distinction etc.  
-
-marks=int(input("enter marks"))
-if(marks<40):
+marks=int(input("Enter The Marks: "))
+if(marks<35):
     print("FAIL")
-elif(marks>=40 and marks<60):
-    print("PASS AND SCORED SECOND CLASS")
-elif(marks>=60 and marks<75):
-    print("PASS AND FIRST CLASS")
-elif(marks>=75 and marks<=100):
-    print("PASS AND DISTINCTION")
+elif(marks<50):
+    print("PASS")
+elif(marks<75):
+    print("Second Class")
+elif(marks<90):
+    print("First Class")
 else:
-    print("invalid marks\n")
+    print("DISTINCTION")
 
 
-#6) print the total of first 10 numbers.
+#6)print the total of first 10 numbers.
 
-sum=0
-for i in range(1,10):
-    sum+=i
-print("sum of first 10 numbers is :", sum)
+i=1
+a=0
+while(i<11):
+   a=i+a
+   i+=1
+print(int(a))
+
 
 
 #7) accept numbers till user enters 0 and display the total of all the numbers entered.
 
-total = 0
+a=0
 while(True):
-    number=int(input("enter a number"))
-    if(number==0):
-        break
-    total+=number
-    print(f"the total of all numbers entered is: {total}")
+    i=int(input("Enter The Number: "))
+    a=i+a
+    if(i==0):
+       break
+    
+print(int(a))
 
 
-#8) accept a charac ter and display whether it is upper case or lower case or not an alphabet. 
-char = input("Enter a character: ")
 
-if len(char) == 1 and char.isalpha():
-    if char.islower():
-        print(f"{char} is a lowercase letter.")
-    elif char.isupper():
-        print(f"{char} is an uppercase letter.")
+#8) accept a character and display whether it is upper case or lower case or not an alphabet.
+
+ch=ord(input("Enter Any Character :"))
+if(ch>=ord('A')):
+    if(ch<=ord('Z')):
+        print("Upper Case Letter")
+    if(ch>=ord('a')):
+        if(ch<=ord('z')):
+            print("Lower Case Letter")
 else:
-    print(f"{char} is not an alphabet character.")
-
-
-print("--------------------")
+    print("Not An Alphanate")        
 
 #9)display fibonicii series of 10 numbers
 
@@ -240,4 +242,6 @@ for i in range(5,0,-1):
       stars = i * " *"
 
       print(" " * spaces + stars)
+
+
 

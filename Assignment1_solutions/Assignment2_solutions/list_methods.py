@@ -22,7 +22,7 @@ mylist=[1,2,2,2,3,4,5,6,5,5,5,6,1,2]  #count()
 print(mylist.count(2))
 
 
-mylist=[1,2,3,4,[5,6,7]]
+mylist=[1,2,3,4,[5,6,7,8]]
 mylist1 = copy.copy(mylist)     #copy
 print(mylist1)
 
@@ -30,7 +30,7 @@ print("mylist_id",id(mylist))
 print("mylist1_id",id(mylist1))
 
 
-mylist=[1,2,3,4,5]
+mylist=[1,2,3,4,5,8]
 mylist1=copy.deepcopy(mylist)      #deepcopy
 print(mylist1)
 
@@ -66,7 +66,7 @@ print(list2.index('bat'))
 
 
 # list of items 
-list1 = [1, 2, 3, 4, 1, 1, 1, 4, 5,8] 
+list1 = [1, 2, 3, 4, 1, 1, 1, 4, 5,8,4] 
 # Will print index of '4' in sublist 
 # having index from 4 to 8. 
 print(list1.index(4, 4, 8)) 
@@ -125,7 +125,7 @@ print(lis)
 
 # the first occurrence of 1 is removed from the list 
 list1 = [ 1, 2, 1, 1, 4, 5 ] 
-list1.remove(1)                              #remove()
+list1.remove(4)                              #remove()
 print(list1) 
 
 # removes 'a' from list2 
