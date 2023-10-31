@@ -3,19 +3,20 @@
 	a) normal function
 	b) lambda
 """
-def square(num):
-    return num*num
-user_input=float(input("enter number"))
-result= square(user_input)
-print(f"The square of {user_input} is {result}")
+
+# def accept(num):
+#     result=num*num
+#     print(result)
+    
+# accept(20)
+    
+# square= lambda num:num*num
+# user_input=int(input("enter a number"))
+# result= square(user_input)
+# print(f"{user_input}square is {result}")
 
 
-
-square = lambda num: num * num
-user_input = float(input("Enter a number: "))
-result = square(user_input)
-print(f"The square of {user_input} is {result}")
-
+(lambda x:print(x*x))(5)
 
 
 
@@ -30,12 +31,16 @@ print(f"The square of {user_input} is {result}")
 	a) normal function
 	b) lambda
 """
-def disp(val):
-    print(val)
-disp("hello world")
 
-hello = lambda val:print(val)
-hello("hello world")
+# def hello():
+#     print("hello")
+    
+# hello()
+
+disp= (lambda :print("hello"))   
+disp()
+
+
 
 
 
@@ -51,16 +56,13 @@ hello("hello world")
 	b) lambda
 """
 
+def myfun(a,b=90):
+    print(a,b)
+    
+myfun(12)
 
-def display_args(arg1, arg2="default_argument"):
-    print("Argument 1:", arg1)
-    print("Argument 2:", arg2)
-
-display_args("Value 1")
-
-disp=lambda arg1,arg2="default value":[arg1,arg2]
-print(disp("hi"))
-
+disp=(lambda a,b=90:print(a,b))
+disp(3)
 
 
 
@@ -73,18 +75,66 @@ print(disp("hi"))
 
 """
 
-def myfun(fun,*var):
-    fun(*var)
-disp1=lambda *x:[print(i) for i in x]
 
-myfun(disp1,"sahil","kotekar")
     
 #Passing function in function and returning function with value
 #and cube function passed while calling
 
 
 
-def myfun(fun,value):
-    return fun(value)
-cube=lambda x:x*x*x
-print(myfun(cube,2))
+# def myfun(fun,value):
+#     return fun(value)
+# cube=lambda x:x*x*x
+# print(myfun(cube,2))
+
+
+
+
+
+# def square(num):
+#     return num*num
+# user_input=float(input("enter number"))
+# result= square(user_input)
+# print(f"The square of {user_input} is {result}")
+
+
+
+# square = lambda num: num * num
+# user_input = float(input("Enter a number: "))
+# result = square(user_input)
+# print(f"The square of {user_input} is {result}")
+
+
+
+
+
+# def disp(val):
+#     print(val)
+# disp("hello world")
+
+# hello = lambda val:print(val)
+# hello("hello world")
+
+
+
+
+
+
+# def display_args(arg1, arg2="default_argument"):
+#     print("Argument 1:", arg1)
+#     print("Argument 2:", arg2)
+
+# display_args("Value 1")
+
+# disp=lambda arg1,arg2="default value":[arg1,arg2]
+# print(disp("hi"))
+
+
+
+
+
+# def myfun(fun,*var):
+#     fun(*var)
+# disp1=lambda *x:[print(i) for i in x]
+
+# myfun(disp1,"sahil","kotekar")

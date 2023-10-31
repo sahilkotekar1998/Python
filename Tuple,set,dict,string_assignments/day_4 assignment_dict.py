@@ -9,17 +9,71 @@ Access the fifth value of each key from the dictionary.
 25
 35
 '''
+mydict={"x":[11,12,13,14,15,16,17,18,19],
+        "y":[21, 22, 23, 24, 25, 26, 27, 28, 29],
+        "z":[31, 32, 33, 34, 35, 36, 37, 38, 39]}
+my=mydict["x"][4]
+print(my)
+
+my1=mydict["y"][4]
+print(my1)
+
+my2=mydict["z"][4]
+print(my2)
+
 
 '''
 2) Write a Python script to add a key to a dictionary. 
 Sample Dictionary : {0: 10, 1: 20}
 Expected Result : {0: 10, 1: 20, 2: 30}
+'''
 
+sample_dict = {0: 10, 1: 20}
+sample_dict[2] = 30
+print(sample_dict)
+
+sample_dict[3]=40
+print(sample_dict)
+
+sample_dict[4]=40
+print(sample_dict)
+
+
+
+
+
+
+
+
+
+
+
+'''
 3) Write a Python script to check whether a given key already exists in a dictionary. 
 
+'''
+sample_dict = {0: 10, 1: 20, 2: 30}
+key_check=10
+if key_check in sample_dict:
+    print("KEY already exists")
+else:
+    print("KEY DOES NOT EXISTS")
+
+
+'''
+
 4) Write a Python program to count the values associated with key in a dictionary. 
-Sample data: = [{'id': 1, 'success': True, 'name': 'Lary'}, {'id': 2, 'success': False, 'name': 'Rabi'}, {'id': 3, 'success': True, 'name': 'Alex'}]
+Sample data: = [{'id': 1, 'success': True, 'name': 'Lary'}, {'id': 2, 'success': False, 'name': 'Rabi'}, 
+{'id': 3, 'success': True, 'name': 'Alex'}]
 Expected result: Count of how many dictionaries have success as True
+
+
+'''
+Sample_dict = [{'id': 1, 'success': True, 'name': 'Lary'}, {'id': 2, 'success': False, 'name': 'Rabi'}, 
+{'id': 3, 'success': True, 'name': 'Alex'}]
+
+
+'''
 
 5) Write a Python program to create a dictionary from two lists without losing duplicate values. 
 Sample lists: ['Class-V', 'Class-VI', 'Class-VII', 'Class-VIII'], [1, 2, 2, 3]
@@ -114,3 +168,6 @@ dic3={5:50,6:60}
 Expected Result : {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
 
 '''
+
+
+
