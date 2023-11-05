@@ -26,6 +26,7 @@ mylist=[1,2,3,4,[5,6,7,8]]
 mylist1 = copy.copy(mylist)     #copy
 print(mylist1)
 
+
 print("mylist_id",id(mylist))
 print("mylist1_id",id(mylist1))
 

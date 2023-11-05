@@ -16,3 +16,13 @@ print(copy_my_list)
 
 print(id(my_list))
 print(id(copy_my_list))
+
+
+
+mylist=[1,2,3,4]
+
+copy_mylist=copy.copy(mylist)
+print(copy_mylist)
+
+print(id(copy_mylist))
+print(id(mylist))

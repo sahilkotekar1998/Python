@@ -9,3 +9,15 @@ for i in range(len(mylist)):
     #print(sum)
 sum_list=list[sum]
 print(sum_list)
+
+
+
+mylist=[1,2,3,4,5]
+print(mylist)
+
+sum=0
+for i in range(len(mylist)):
+    sum+=mylist[i]
+
+sum_list=[sum]
+print(sum_list)

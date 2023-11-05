@@ -148,3 +148,21 @@ print(f"The sum is: {result}")
 
 
 print("--------------")
+
+
+
+
+# 2) define a function which accepts a number and return its square.
+
+
+
+def square(num):
+    return num*num
+
+user=int(input("enter a number"))
+square(user)
+
+
+
+
+

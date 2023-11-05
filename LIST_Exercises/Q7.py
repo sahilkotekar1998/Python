@@ -7,3 +7,11 @@ print(new_list)
 list1=list(new_list)
 print(list1)
 
+
+
+mylist=[1,1,1,2,2,3,4,5,6,6,6,7]
+myset= set(mylist)
+print(myset)
+
+unique_list=list(myset)
+print(unique_list)

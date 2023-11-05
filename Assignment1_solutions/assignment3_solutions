@@ -4,16 +4,16 @@
 	b) lambda
 """
 
-# def accept(num):
-#     result=num*num
-#     print(result)
+def accept(num):
+    result=num*num
+    print(result)
     
-# accept(20)
+accept(20)
     
-# square= lambda num:num*num
-# user_input=int(input("enter a number"))
-# result= square(user_input)
-# print(f"{user_input}square is {result}")
+square= lambda num:num*num
+user_input=int(input("enter a number"))
+result= square(user_input)
+print(f"{user_input}square is {result}")
 
 
 (lambda x:print(x*x))(5)
@@ -81,11 +81,33 @@ disp(3)
 #and cube function passed while calling
 
 
+# def display_args(arg1, arg2="default_argument"):
+#     print("Argument 1:", arg1)
+#     print("Argument 2:", arg2)
 
-# def myfun(fun,value):
-#     return fun(value)
-# cube=lambda x:x*x*x
-# print(myfun(cube,2))
+# display_args("Value 1")
+
+# disp=lambda arg1,arg2="default value":[arg1,arg2]
+# print(disp("hi"))
+
+
+
+
+
+def myfun(fun,*var):
+    fun(*var)
+disp1=lambda *x:[print(i) for i in x]
+
+myfun(disp1,"sahil","kotekar")
+
+
+
+
+
+def myfun(fun,value):
+    return fun(value)
+cube=lambda x:x*x*x
+print(myfun(cube,2))
 
 
 
@@ -120,21 +142,3 @@ disp(3)
 
 
 
-# def display_args(arg1, arg2="default_argument"):
-#     print("Argument 1:", arg1)
-#     print("Argument 2:", arg2)
-
-# display_args("Value 1")
-
-# disp=lambda arg1,arg2="default value":[arg1,arg2]
-# print(disp("hi"))
-
-
-
-
-
-# def myfun(fun,*var):
-#     fun(*var)
-# disp1=lambda *x:[print(i) for i in x]
-
-# myfun(disp1,"sahil","kotekar")

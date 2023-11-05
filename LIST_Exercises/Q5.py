@@ -18,3 +18,12 @@ for string in string_list:
 
 # Print the count of matching strings
 print("Number of strings with length >= 2 and the same first and last character:", count)
+
+
+string=["abc","1221","aba","cac"]
+count=0
+for i in string:
+    if len(i)>=2 and i[0]==i[-1]:
+        count+=1
+
+print(count)

@@ -19,3 +19,16 @@ longer_words = find_words_longer_than_n(word_list, n)
 
 # Print the result
 print(f"Words longer than {n} characters: {longer_words}")
+
+
+
+def find(words_long,n):
+    result=[]
+    for word in words_long:
+        if len(word)>n:
+            result.append(word)
+    return result
+n=5
+list=["apple","mango","banana"]
+a=find(list,n)
+print(n,a)

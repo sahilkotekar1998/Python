@@ -6,3 +6,12 @@ result=1
 for i in range(len(mylist)):
     result*=mylist[i]
 print(result)
+
+
+
+mylist=[1,2,3,4,5]
+
+sum=1
+for i in range(len(mylist)):
+    sum*=mylist[i]
+print(sum)
